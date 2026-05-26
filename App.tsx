@@ -31,9 +31,9 @@ function App() {
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-        {/* <TextRefExample /> */}
-        {/* <WithoutOpti /> */}
-        {/* <DebounceSearch /> */}
+        <TextRefExample />
+        <WithoutOpti />
+        <DebounceSearch />
         <KeyChainExmaple />
       </SafeAreaView>
     </SafeAreaProvider>
