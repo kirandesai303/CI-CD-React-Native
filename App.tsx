@@ -5,20 +5,8 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import {
-  Button,
-  StatusBar,
-  StyleSheet,
-  TextInput,
-  useColorScheme,
-  View,
-} from 'react-native';
-import {
-  SafeAreaProvider,
-  SafeAreaView,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import { StatusBar, StyleSheet, useColorScheme } from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import TextRefExample from './src/screens/TextRefExample';
 import WithoutOpti from './src/screens/WithoutOpti';
 import DebounceSearch from './src/screens/DebounceSearch';
