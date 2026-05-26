@@ -5,7 +5,6 @@
  * @format
  */
 
-import { NewAppScreen } from '@react-native/new-app-screen';
 import {
   Button,
   StatusBar,
@@ -14,11 +13,7 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
-import {
-  SafeAreaProvider,
-  SafeAreaView,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { useRef } from 'react';
 import TextInputComponent from '../components/TextInputComponent';
 

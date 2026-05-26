@@ -29,9 +29,10 @@ const WithoutOpti = () => {
   //   return num * 2;
   // };
 
-  // const result = expensiveCalculation(count);
+  //const result = expensiveCalculation(count);
   // console.log('Expensive Calculation Result:', result);
-  const result = useMemo(() => {
+  // const result = useMemo(() => {
+  useMemo(() => {
     console.log('Calculating...');
     for (let i = 0; i < 1000000000; i++) {}
     return count * 2;
