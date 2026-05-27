@@ -62,7 +62,8 @@ jobs:
       # Verify Keystore
       - name: Verify Keystore
         run: |
-          ls -lh android/app/
+    	file android/app/my-upload-key.keystore
+    	ls -lh android/app/
 
       # Give Permission to gradlew
       - name: Grant Execute Permission
