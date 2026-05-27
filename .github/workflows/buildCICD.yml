@@ -57,12 +57,13 @@ jobs:
       # Decode Keystore
       - name: Decode Keystore
         run: |
-          echo "${{ secrets.ANDROID_KEYSTORE }}" | base64 -d > android/app/my-upload-key.keystore
+          echo "${{ secrets.ANDROID_KEYSTORE }}" | openssl base64 -d -A -out android/app/my-upload-key.keystore
 
+      # Verify Keystore
       - name: Verify Keystore
-  	run: |
-    	file android/app/my-upload-key.keystore
-    	ls -lh android/app/
+        run: |
+          file android/app/my-upload-key.keystore
+          ls -lh android/app/
 
       # Give Permission to gradlew
       - name: Grant Execute Permission
@@ -78,7 +79,7 @@ jobs:
           cd android
           ./gradlew assembleRelease
 
-      # Upload APK
+      # Upload APK Artifact
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
