@@ -59,7 +59,7 @@ jobs:
         run: |
           echo "${{ secrets.ANDROID_KEYSTORE }}" | base64 -d > android/app/my-upload-key.keystore
 
-      # Verify Keystore
+      # Verify Keystore file
       - name: Verify Keystore
         run: |
     	file android/app/my-upload-key.keystore
