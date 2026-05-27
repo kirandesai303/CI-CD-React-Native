@@ -14,11 +14,14 @@ import KeyChainExmaple from './src/screens/KeyChainExmaple';
 
 function App() {
   const isDarkMode = useColorScheme() === 'dark';
-
+  {
+    console.log('App Rendered');
+  }
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+
         <TextRefExample />
         <WithoutOpti />
         <DebounceSearch />
