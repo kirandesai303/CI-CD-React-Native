@@ -60,9 +60,9 @@ jobs:
           echo "${{ secrets.ANDROID_KEYSTORE }}" | base64 -d > android/app/my-upload-key.keystore
 
       - name: Verify Keystore
-  run: |
-    file android/app/my-upload-key.keystore
-    ls -lh android/app/
+  	run: |
+    	file android/app/my-upload-key.keystore
+    	ls -lh android/app/
 
       # Give Permission to gradlew
       - name: Grant Execute Permission
